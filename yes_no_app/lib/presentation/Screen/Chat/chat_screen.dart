@@ -61,7 +61,7 @@ class _ChatView extends StatelessWidget
         
             
         
-            Text('Mundo'),
+            const Text('Mundo'),
           ],
         ),
       ),
