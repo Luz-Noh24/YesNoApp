@@ -22,7 +22,7 @@ class HeMenssageBubble extends StatelessWidget
           child: const Padding
           (
             padding: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
-            child: Text('Adi', style: TextStyle(color: Colors.white),),
+            child: Text('LUZ ANGELICA NOH GAMBOA', style: TextStyle(color: Colors.white),),
           ),
         ),
         const SizedBox(height: 5),
