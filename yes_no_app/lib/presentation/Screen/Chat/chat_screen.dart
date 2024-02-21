@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yes_no_app/presentation/widgets/chat/he_menssage_bubble.dart';
 import 'package:yes_no_app/presentation/widgets/chat/my_menssage_bubble.dart';
 ///Scaffold widget para una bara, inicio de todo///
 class ChatScreen extends StatelessWidget
@@ -43,19 +44,22 @@ class _ChatView extends StatelessWidget
           [
             ///builder una forma de contrucción de ejecución
             //////
-            ListView.builder
-           (
-             itemCount: 100,
-             itemBuilder: (context, index) 
-             {
-               return const MyMessageBubble();
-             },
+            Expanded
+            (
+              child: ListView.builder
+              ( itemCount: 100,itemBuilder: (context, index) 
+               {
+                 return(index % 2 == 0)
+                 ? const HeMenssageBubble()
+                 : const MyMessageBubble(); 
+                },
+              ),
             ),
            
             
         
         
-            Text('Hola'),
+            
         
             Text('Mundo'),
           ],
