@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yes_no_app/presentation/widgets/chat/he_menssage_bubble.dart';
 import 'package:yes_no_app/presentation/widgets/chat/my_menssage_bubble.dart';
+import 'package:yes_no_app/presentation/widgets/shared/message_field_box.dart';
 ///Scaffold widget para una bara, inicio de todo///
 class ChatScreen extends StatelessWidget
 {
@@ -60,8 +61,10 @@ class _ChatView extends StatelessWidget
         
         
             
-        
-            const Text('Mundo'),
+            //caja de texto
+            const MessageFieldBox(),
+
+           
           ],
         ),
       ),
