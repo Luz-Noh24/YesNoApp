@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yes_no_app/presentation/widgets/chat/my_menssage_bubble.dart';
 ///Scaffold widget para una bara, inicio de todo///
 class ChatScreen extends StatelessWidget
 {
@@ -47,7 +48,7 @@ class _ChatView extends StatelessWidget
              itemCount: 100,
              itemBuilder: (context, index) 
              {
-               return Text('Indice: $index');
+               return const MyMessageBubble();
              },
             ),
            
